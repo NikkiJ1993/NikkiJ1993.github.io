@@ -1,0 +1,85 @@
+
+.content{
+	width:100%;
+}
+.square1, .square2, .square3, .square4{
+	width:25%;
+	float: left;
+	height: 25%;
+	position: relative;
+}
+
+video  {
+ width: 100%;
+  height: auto;
+  float: left;
+}
+
+a.testlink {
+    text-decoration: none;
+	color:white;
+}
+.videoOverlay{
+	position: absolute;
+    background-color: rgba(178, 17, 219, 0.6);
+	width:100%;
+	height:100%;
+	color:white;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 4.5em;
+}
+
+.videoOverlay2{
+	position: absolute;
+    background-color: rgba(3, 149, 193, 0.6);
+	width:100%;
+	height:100%;
+	color:white;
+	text-align: center;
+	font-size: 4.5em;
+}
+
+.videoOverlay3{
+	position: absolute;
+    background-color: rgba(102, 175, 7, 0.6);
+	width:100%;
+	height:100%;
+	color:white;
+	text-align: center;
+	font-size: 4.5em;
+}
+
+.videoOverlay4{
+	position: absolute;
+    background-color: rgba(175, 7, 49, 0.6);
+	width:100%;
+	height:100%;
+	color:white;
+	text-align: center;
+	font-size: 4.5em;
+}
+
+.who, .what, .where, .random {
+	width:30%;
+}
+
+.what {
+/*	text-align: right;*/
+	float: right;
+	padding-left: 70%;
+}
+
+.where {
+	float: left;
+}
+
+.random {
+/*	text-align: right;*/
+	float: right;
+	padding-left: 70%;
+}
+
+.aboutList {
+    float: none;
+}

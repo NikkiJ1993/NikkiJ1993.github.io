@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Technicole Portfolio</title>
+        <meta name="description" content="Digtital Portfolio. Showcase for artistic and technichal creations.">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="menupage.js"></script>
+        <link rel="stylesheet" href="about.css">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="tablet.css">
+		<link rel="stylesheet" href="phone.css">
+		<link rel="stylesheet" href="linkHover.css">
+		<script src="menuicon.js"></script>
+		<script src="colorchange.js"></script>
+<!--		<script src="pageload.js"></script>-->
+    </head>
+    <body>
+		<div>
+			<nav class="menu-opener">
+				<a href="index.html"><img class="logo" src="Asset1.png" alt="Technicole" height="12" width="202"></a>
+				<ul class="main-nav">
+					<li>
+						<span class="square">
+						<a class="navLink" href="contact.html">Contact</a>
+						</span>
+					</li>
+					<li>
+						<span class="square">
+						<a class="navLink" href="work.html">Work</a>
+						</span>
+					</li>
+					<li>
+						<span class="square">
+						<a class="navLink" href="about.html">About</a>
+						</span>
+					</li>
+				</ul>
+				<div class="container" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+			</nav>
+			<div id="myNav" class="overlay">
+<!--			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+			  <div class="overlay-content">
+				<a id="navItem" onMouseOver="mouseOverLinkColor(this, 'rgba(128, 0, 117, 0.9)')" onMouseOut="mouseOutLinkColor(this)" href="about.html">About</a>
+				<a id="navItem" href="work.html"  onMouseOver="mouseOverLinkColor(this, 'rgba(13, 66, 186, 0.9)')" onMouseOut="mouseOutLinkColor(this)">Work</a>
+				<a id="navItem" href="contact.html"  onMouseOver="mouseOverLinkColor(this, 'rgba(13,186,134, 0.9)')" onMouseOut="mouseOutLinkColor(this)">Contact</a>
+			  </div>
+			</div>
+			<div class="content">
+				<div class="square1">
+					<div class="videoOverlay"><a class="testlink"href="#who">#WHO</a></div>
+					<a href="#who">
+					 <video muted loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="who2.mp4" type="video/mp4">
+<!--						<source src="mov_bbb.ogg" type="video/ogg">-->
+						Your browser does not support HTML5 video.
+					 </video>
+					</a>
+				</div>
+				<div class="square2">
+						<div class="videoOverlay2"><a class="testlink"href="#what">#WHAT</a></div>
+					<a href="#what">
+					<video muted loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="what.mp4" type="video/mp4">
+<!--						<source src="mov_bbb.ogg" type="video/ogg">-->
+						Your browser does not support HTML5 video.
+					 </video>
+						</a>
+				</div>
+				<div class="square3">
+						<div class="videoOverlay3"><a class="testlink"href="#where">#WHERE</a></div>
+					<a href="#where">
+					<video muted loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="where.mp4" type="video/mp4">
+<!--						<source src="mov_bbb.ogg" type="video/ogg">-->
+						Your browser does not support HTML5 video.
+					 </video>
+					</a>
+				</div>
+				<div class="square4">
+						<div class="videoOverlay4"><a class="testlink"href="#random">#RANDOM</a></div>
+					<a href="#random">
+					<video muted loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+						<source src="random.mp4" type="video/mp4">
+<!--						<source src="mov_bbb.ogg" type="video/ogg">-->
+						Your browser does not support HTML5 video.
+					 </video>
+					</a>
+				</div>
+			</div>
+			<div class="aboutContent">
+				<div class="who" id="who">
+					<h1 id="who">Who</h1>
+					Hey there! I don't know about you, but for me, talking about myself is pretty odd. It takes some time to craft a entertaining and quirky description of myself. So in the meantime, enjoy a list of my favorite video games (I know that's what you're really here for).
+					<ol>
+						<li class="aboutList">Tekken 5</li>
+						<li class="aboutList">Portal</li>
+						<li class="aboutList">Need For Speed: Midnight Club Dub Edition</li>
+						<li class="aboutList">Crash Bandicoot</li>
+						<li class="aboutList">SSX Tricky</li>
+						<li class="aboutList">FarCry 3</li>
+						<li class="aboutList">Tekken Tag Tournament 2</li>
+						<li class="aboutList">Grand Theft Auto 5</li>
+					</ol>
+				</div>
+				<div class="what" name="what">
+					<h1 id="what">what</h1>
+					Design! Code! I love both. I'll lay out some stats for you so you get a feel for what exactly I can do.<br>
+					....<br>
+					Um...<br>
+					Well, this is awkward. I have cool graphics to paste here, but I seem to have misplaced them. While I go find them, check out my <a href="https://www.linkedin.com/in/nicole-justice-98173552/">LinkedIn</a> and a list of my top musicians/bands for this month.
+					<ol>
+						<li class="aboutList">Childish Gambino</li>
+						<li class="aboutList">Chon</li>
+						<li class="aboutList">The Virus and Antidote</li>
+						<li class="aboutList">J Cole</li>
+						<li class="aboutList">Janelle Monae</li>
+						<li class="aboutList">Tyler the Creator</li>
+						<li class="aboutList">Cardi B</li>
+						<li class="aboutList">Flume</li>
+					</ol>
+				</div>
+				<div class="where">
+					<h1 id="where">where</h1>
+					KANSAS CITY, MISSOURI! Born and raised. 
+				</div>
+				<div class="random">
+					<h1 id="random">random</h1>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+					...Did you actually read any of that? I hope not. <br>
+					Want to know some random facts about me? Wellllll you'll just have to wait. In the meantime let's play two truths and a lie.
+					<ol>
+						<li class="aboutList">I speak an intermediate level of Japanese</li>
+						<li class="aboutList">I ziplined in Saudi Arabia</li>
+						<li class="aboutList">I've been to 3 different Air Force bases</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

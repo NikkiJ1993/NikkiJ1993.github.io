@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Song+Myung');
+
+* {
+	font-family: 'Song Myung', serif;
+}
+body{
+/*	background-color: black;*/
+	margin:0px;
+}
+.menu-opener{
+	text-align: right; 
+	position: relative; 
+	z-index: 2;
+/*	padding: .5%;*/
+/*	background-color: lavender;*/
+	height:50px;
+	padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+    max-width:570px;
+    max-height:460px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+	margin-top:20px;
+	float:left;
+}
+
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: right;
+}
+
+/*li a {*/
+/*
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+*/
+/*}*/
+
+.active {
+    background-color: #4CAF50;
+}
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+}
+
+#zio {
+	margin: auto;
+	margin-top: 20%;
+    -webkit-animation: bounce 3s infinite ease-in-out;
+    -o-animation: bounce 3s infinite ease-in-out;
+    -ms-animation: bounce 3s infinite ease10in-out; 
+    -moz-animation: bounce 3s infinite ease-in-out; 
+    animation: bounce 3s infinite ease-in-out;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+	background-color: azure;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+	background-color: azure;
+}
+
+
+/* The animation code */
+/*
+@keyframes example {
+	0%   {background-color: white;}
+    50%  {background-color: yellow;}
+    100% {background-color: white;}
+}
+*/
+
+/* The element to apply the animation to */
+#box {
+	float:left;
+    width: 60px;
+    height: 60px;
+	margin: 8px;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 10s;
+	animation-iteration-count: infinite;
+/*	animation-timing-function: ease-in-out;*/
+	-moz-transition: all .09s ease-in;
+    -o-transition: all .09s ease-in;
+    -webkit-transition: all .09s ease-in;
+    transition: all .09s ease-in;
+}
+
+#box:hover {
+/*	background: red;*/
+	
+}
+
+#box:not( :hover ){
+	-moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.column {
+    float: left;
+    width: 40%;
+}
+
+.outercolumn {
+    float: left;
+    width: 33.33%;
+}
+
+.innercolumn {
+    float: left;
+    width: 33.33%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+.row{
+	border: 10px solid green;
+	border-top: none;
+}
+*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+/*    background-color: rgb(0,0,0);*/
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+
+

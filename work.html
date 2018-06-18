@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Technicole Portfolio</title>
+        <meta name="description" content="Digtital Portfolio. Showcase for artistic and technichal creations.">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="menupage.js"></script>
+        <link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="tablet.css">
+		<link rel="stylesheet" href="phone.css">
+		 <link rel="stylesheet" href="work.css">
+		<link rel="stylesheet" href="linkHover.css">
+		<script src="menuicon.js"></script>
+		<script src="colorchange.js"></script>
+		<script src="pageload.js"></script>
+		<script>
+		</script>
+    </head>
+    <body>
+		<div id="allContent">
+			<nav class="menu-opener">
+				<a href="index.html"><img class="logo" src="Asset1.png" alt="Technicole" height="12" width="202"></a>
+				<ul class="main-nav">
+					<li>
+						<span class="square">
+						<a class="navLink" href="contact.html">Contact</a>
+						</span>
+					</li>
+					<li>
+						<span class="square">
+						<a class="navLink" href="work.html">Work</a>
+						</span>
+					</li>
+					<li>
+						<span class="square">
+						<a class="navLink" href="about.html">About</a>
+						</span>
+					</li>
+				</ul>
+				<div class="container" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+			</nav>
+			<div id="myNav" class="overlay">
+<!--			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+			  <div class="overlay-content">
+				<a id="navItem" onMouseOver="mouseOverLinkColor(this, 'rgba(128, 0, 117, 0.9)')" onMouseOut="mouseOutLinkColor(this)" href="about.html">About</a>
+				<a id="navItem" href="work.html"  onMouseOver="mouseOverLinkColor(this, 'rgba(13, 66, 186, 0.9)')" onMouseOut="mouseOutLinkColor(this)">Work</a>
+				<a id="navItem" href="contact.html"  onMouseOver="mouseOverLinkColor(this, 'rgba(13,186,134, 0.9)')" onMouseOut="mouseOutLinkColor(this)">Contact</a>
+			  </div>
+			</div>
+<!--			Future feature is to have sub-menu to select category of content -->
+			<div class="categories">
+<!--
+				<ul class="category-nav">
+					<li><a href="#news">Javascript</a></li>
+					<li><a href="about.html">Drawing</a></li>
+					<li><a href="#news">Oil Paint</a></li>
+				</ul>
+-->
+			</div>
+			<h3>Code</h3>
+			<div>
+				<ul class="contentUL">
+					<li class="contentLI"><a class="contentNav" href="movie.html">Javascript API Intro Project</a></li>
+					<li class="contentLI"><a class="contentNav" href="https://github.com/NikkiJ1993/Portfolio">Portfolio Repo</a></li>
+				</ul>
+			</div>
+			<h3>Art</h3>
+			<div class="wrapper">
+			  <a href="#" class="artPic" data-title="Project 1">
+				<img class="artImg" src="motion.png"/>
+			  </a>
+			  <a href="#" class="artPic"data-title="Project 2">
+				<img class="artImg" src="controller.png"/>
+			  </a>
+			  <a href="#" class="artPic" data-title="Project 3">
+				<img class="artImg" src="BGC.png"/>
+			  </a>
+			  <a href="#" class="artPic" data-title="Project 4">
+				<img class="artImg" src="cardFront.png"/>
+			  </a>
+			  <a href="#" class="artPic" data-title="Project 5">
+				<img class="artImg" src="3eye.png"/>
+			  </a>
+			  <a href="#" class="artPic" data-title="Project 6">
+				  <img class="artImg" src="eyes1-02.png"/>
+			  </a>
+			  <a href="#" class="artPic" data-title="Project 7">
+				<img class="artImg" src="7.JPG"/>
+			  </a>
+			  <a href="#" class="artPic" data-title="Project 8">
+				 <img class="artImg" src="eyes2-02.png"/>
+			  </a>
+			</div>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Sarala:400,700);
+
+.wrapper{font-size:0;}/*for inline block spacing*/
+
+.artPic{
+  display:inline-block;
+  width:25%;
+  height:50vh;
+  position:relative;
+}
+
+.artImg {
+  height:100%; 
+  width:100%;
+  object-fit:cover;}
+.artPic:before, .artPic:after{
+  width:100%;
+  position:absolute;
+  opacity:0;
+  transition:opacity 0.3s ease;
+
+}
+
+.artPic:before{
+  content:'';
+  height:100%;
+  background:rgba(122,157,83,0.8);
+}
+
+.artPic:after{
+  content:attr(data-title);
+  font-size:24px;
+  top:calc(50% - 0.5em);
+  left:0;
+  text-align:center;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+.artPic:hover:before, .artPic:hover:after{
+  opacity:1;
+}
+
+
+@media (max-width:650px){
+.artPic{
+  width:50%;
+  height:100vh;
+}
+}
+
+@media (max-width:480px){
+a{
+  width:100%;
+}
+}
+a.contentNav {
+	text-decoration: none;
+}
+
+.contentUL {
+    list-style-type: none;
+}
+.contentLI {
+    float: left;
+	width:100%;
+}
